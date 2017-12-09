@@ -1,27 +1,104 @@
-# Angular
+# AngBull
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+[![npm](https://img.shields.io/npm/v/angbull.svg)]()
+[![npm](https://img.shields.io/npm/dt/angbull.svg)]()
+[![npm](https://img.shields.io/npm/l/angbull.svg)]()
 
-## Development server
+AngBull is a lightweight library of responsive UI components for [Angular](https://angular.io/) based on [Bulma](http://bulma.io/) css framework.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+* very lightweight with none internal dependencies aside from Bulma
+* very small size About 60KB min+gzip (with Bulma included)
+* Semantic code output
+* Follows flexbox design 
+* Focus on usability and performance without *over-animations*
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Documentation
+documentation will be released soon...
 
-## Build
+## Quick start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+You need to create a project using [angular-cli](https://cli.angular.io/).
 
-## Running unit tests
+![angular-cli](https://cli.angular.io/images/cli-logo.svg)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+this will install latest version of angular and install all dependencies.
 
-## Running end-to-end tests
+### 1- Installation 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+now install angbull via npm or yarn 
+####via npm
 
-## Further help
+```bash
+npm install angbull --save
+```
+####via yarn
+ 
+```bash
+yarn add angbull
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### 2 Import and use AngBull
+
+```javascript
+import Vue from 'vue';
+import Buefy from 'buefy';
+import 'buefy/lib/buefy.css';
+
+Vue.use(Buefy);
+
+// OR
+
+Vue.component(Buefy.Checkbox.name, Buefy.Checkbox);
+Vue.component(Buefy.Table.name, Buefy.Table);
+Vue.component(Buefy.Switch.name, Buefy.Switch);
+```
+
+### 3 Include Material Design Icons
+
+```html
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+```
+
+If you want to customize the icons or the theme, refer to the [customization section on the documentation](https://buefy.github.io/#/documentation/customization).
+
+### Alternatively, you can use a CDN or even download
+
+```html
+<!-- Buefy CSS -->
+<link rel="stylesheet" href="https://unpkg.com/buefy/lib/buefy.min.css">
+
+<!-- Buefy JavaScript -->
+<script src="https://unpkg.com/buefy"></script>
+```
+
+```javascript
+// Global variable
+Vue.use(Buefy.default)
+```
+
+## Browser support
+
+Recent versions of Firefox, Chrome, Edge, Opera and Safari. IE10+ is only partially supported.
+
+## Versioning
+
+While it's still in beta, version will follow **v0.Y.Z**, where:
+
+* **Y**: Major (breaking changes)
+* **Z**: Minor or patch
+
+## Stay in touch
+
+* [Twitter](https://twitter.com/rafaelpimpa)
+
+## Collaborators
+
+* Walter Tommasi — [@jtommy](https://github.com/jtommy)
+
+## License
+
+Code released under [MIT]((https://github.com/rafaelpimpa/buefy/blob/master/LICENSE)) license.
+
+Copyright (c) 2017, Rafael Beraldo.
